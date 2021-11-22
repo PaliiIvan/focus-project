@@ -1,0 +1,151 @@
+.contact_container {
+  margin-top: 10rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+
+  @media screen and (max-width: 990px) {
+    flex-direction: column;
+  }
+
+  .issue_container {
+    width: clamp(34rem, 40%, 50rem);
+    height: 600px;
+    @media screen and (max-width: 560px) {
+      width: clamp(20rem, 40%, 50rem);
+    }
+  }
+
+  .contacts_container {
+    width: clamp(15rem, 30%, 50rem);
+    height: 600px;
+
+    @media screen and (max-width: 990px) {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      width: clamp(34rem, 40%, 50rem);
+    }
+
+    @media screen and (max-width: 560px) {
+      flex-direction: column;
+      align-items: center;
+      width: clamp(20rem, 40%, 50rem);
+    }
+  }
+
+  .description_title {
+    font-size: 24px;
+  }
+
+  .contact_help_card {
+    margin-top: 60px;
+  }
+
+  .color_blue {
+    fill: rgba(116, 200, 248, 1);
+  }
+
+  .color_yellow {
+    fill: rgba(229, 227, 162, 1);
+  }
+
+  .address {
+    font-size: 14px;
+    color: #605e5e;
+    margin-top: 3rem;
+    span {
+      font-weight: bold;
+    }
+  }
+
+  .social_media {
+    display: flex;
+    margin-top: 1rem;
+    align-items: center;
+    div:first-child {
+      font-weight: bold;
+      font-size: 14px;
+      color: #605e5e;
+    }
+    .social-icons {
+      display: flex;
+      img {
+        width: 30px;
+        height: 30px;
+        margin-left: 1rem;
+      }
+    }
+  }
+
+  .forms_container {
+    margin-top: 5rem;
+
+    @media screen and (max-width: 990px) {
+      margin-top: 0rem;
+    }
+  }
+
+  .email_form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 2.5rem;
+    label {
+      font-weight: 700;
+      color: #605e5e;
+    }
+
+    input {
+      width: 15rem;
+      height: 2rem;
+    }
+  }
+
+  .message_form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+    label {
+      font-weight: 700;
+      color: #605e5e;
+    }
+
+    textarea {
+      width: 15rem;
+      height: 10rem;
+      resize: none;
+    }
+  }
+
+  .submit_btn {
+    margin-top: 1rem;
+    outline: none;
+    border: none;
+    background-color: #ff7070;
+    padding: 0.3rem 1rem 0.3rem 1rem;
+    color: white;
+    font-weight: 300;
+    border-radius: 0.2rem;
+    cursor: pointer;
+  }
+
+  .submit_btn:focus {
+    background-color: #bb5151;
+  }
+
+  .contacts_container {
+    textarea,
+    input {
+      border: none;
+      outline: none;
+      border-radius: 0.2rem;
+    }
+
+    textarea::placeholder,
+    input::placeholder {
+      font-size: 10px;
+      padding-left: 0.3rem;
+    }
+  }
+}

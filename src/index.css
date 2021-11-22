@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+  font-family: 'Poppins', sans-serif;
+  box-sizing: border-box;
+}
+
+
+.background_img {
+  position: absolute;
+}
+
+body {
+  margin-right: clamp(0.2rem, 10%, 10rem);
+  margin-left: clamp(0.2rem, 10%, 10rem);
+  overflow-x: hidden;
+}
+
+.waive {
+  fill:  linear-gradient(rgba(96, 243, 171, 1), rgba(1, 66, 137, 1));
+}
+
+.bold {
+  font-weight: 700;
+}
+
+::-webkit-scrollbar {
+  width: 0;  /* Remove scrollbar space */
+  background: transparent;  /* Optional: just make scrollbar invisible */
+}

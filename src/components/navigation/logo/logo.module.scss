@@ -1,0 +1,19 @@
+.site_name {
+  font-size: 2rem;
+}
+
+.logo_container {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  width: 3rem;
+  margin-right: 1rem;
+}
+
+.logo_container_link {
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
+}
